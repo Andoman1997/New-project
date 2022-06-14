@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
 import PageHead from "../src/components/PageHead";
+import Header from "../src/components/containers/Header/Header";
 
 const Home: NextPage = () => {
   return (
-    <PageHead/>
+    <>
+        <PageHead/>
+        <Header/>
+    </>
   )
 }
 
