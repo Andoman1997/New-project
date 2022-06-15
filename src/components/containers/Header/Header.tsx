@@ -20,10 +20,10 @@ const Header = () => {
             </LeftContainer>
 
             <RightContainer>
-                <Link href='/login/login' passHref>
+                <Link href='/login' passHref>
                     <LoginLink>Login</LoginLink>
                 </Link>
-                <Link href='/register/register' passHref>
+                <Link href='/signup' passHref>
                     <SignUpLink>Sign Up</SignUpLink>
                 </Link>
             </RightContainer>
