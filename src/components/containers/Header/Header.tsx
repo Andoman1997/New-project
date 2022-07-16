@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftContainer>
-        <Image src={logoLarge} alt={'Provineer Logo'} title={'Provineer Logo'} />
+        <Image src={logoLarge} alt="Provineer Logo" title="Provineer Logo" />
       </LeftContainer>
 
       <RightContainer>
