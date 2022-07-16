@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 96px;
-  background-color: #FFFFFF;
-`
+  background-color: #ffffff;
+`;
 
 export const StyledLink = styled.a`
   display: flex;
@@ -20,26 +19,25 @@ export const StyledLink = styled.a`
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-`
+`;
 
 export const LoginLink = styled(StyledLink)`
-    background-color: #FFFFFF;
-    color: #171717;
-    border: 1px solid #F4F4F4;
-    margin-right: 12px;
-`
+  background-color: #ffffff;
+  color: #171717;
+  border: 1px solid #f4f4f4;
+  margin-right: 12px;
+`;
 
 export const SignUpLink = styled(StyledLink)`
   background-color: #171717;
-  color: #FFFFFF;
-`
+  color: #ffffff;
+`;
 
 export const RightContainer = styled.div`
   display: flex;
   align-items: center;
   margin-right: 112px;
 `;
-
 
 export const LeftContainer = styled.div`
   display: flex;

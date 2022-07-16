@@ -1,16 +1,18 @@
 {
-  "name": "pro",
+  "name": "provineer",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint --debug src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --debug src/**/*.{ts,tsx} --fix",
+    "lint:fix:nodebug": "eslint src/**/*.{ts,tsx} --fix"
   },
   "dependencies": {
     "next": "12.1.6",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "styled-components": "^5.3.5"
@@ -20,9 +22,28 @@
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
     "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
     "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "^8.17.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-jest-enzyme": "^7.1.2",
     "eslint-config-next": "12.1.6",
-    "typescript": "4.7.3"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.2.6",
+    "eslint-plugin-disable": "^2.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lint-staged": "^13.0.3",
+    "typescript": "^4.7.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --ext .ts --ext .tsx"
+    ]
   }
 }
