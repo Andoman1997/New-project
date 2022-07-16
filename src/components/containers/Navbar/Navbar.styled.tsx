@@ -18,7 +18,8 @@ export const StyledLink = styled.a`
   border-radius: 5px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 16px;
+  font-feature-settings: 'ss03' on;
 `;
 
 export const LoginLink = styled(StyledLink)`
@@ -33,14 +34,34 @@ export const SignUpLink = styled(StyledLink)`
   color: #ffffff;
 `;
 
-export const RightContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 112px;
-`;
-
 export const LeftContainer = styled.div`
   display: flex;
+  flex: 20%;
+  padding-left: 112px;
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex: 20%;
   justify-content: flex-end;
-  margin-left: 112px;
+  padding-right: 112px;
+`;
+
+export const NavbarLinkContainer = styled.div`
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex: 60%;
+`;
+
+export const NavbarLink = styled.a`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #737373;
+  font-feature-settings: 'ss03' on;
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
 `;

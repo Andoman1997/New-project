@@ -7,6 +7,8 @@ import {
   LeftContainer,
   LoginLink,
   NavbarContainer,
+  NavbarLink,
+  NavbarLinkContainer,
   RightContainer,
   SignUpLink,
 } from './Navbar.styled';
@@ -17,6 +19,18 @@ const Header = () => {
       <LeftContainer>
         <Image src={logoLarge} alt="Provineer Logo" title="Provineer Logo" />
       </LeftContainer>
+
+      <NavbarLinkContainer>
+        <Link href="/HowItWorks" passHref>
+          <NavbarLink>How It works</NavbarLink>
+        </Link>
+        <Link href="/about" passHref>
+          <NavbarLink>About</NavbarLink>
+        </Link>
+        <Link href="/faq" passHref>
+          <NavbarLink>FAQ</NavbarLink>
+        </Link>
+      </NavbarLinkContainer>
 
       <RightContainer>
         <Link href="/login" passHref>
