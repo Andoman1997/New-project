@@ -1,16 +1,15 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 function PageHead() {
-    return (
-        <div>
-            <Head>
-                <title>Provineer</title>
-                <meta name="description" content="Meta description for the  page" />
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
-            </Head>
-        </div>
-    );
+  return (
+    <div>
+      <Head>
+        <title>Provineer</title>
+        <meta name="description" content="Meta description for the  page" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+    </div>
+  );
 }
 
 export default PageHead;

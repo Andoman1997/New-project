@@ -1,14 +1,14 @@
-import type { NextPage } from 'next'
-import PageHead from "../components/PageHead";
-import Header from "../components/containers/Header/Header";
+import type { NextPage } from 'next';
+import PageHead from 'components/PageHead';
+import Header from 'components/containers/Header/Header';
 
 const Home: NextPage = () => {
   return (
     <>
-        <PageHead/>
-        <Header/>
+      <PageHead />
+      <Header />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
