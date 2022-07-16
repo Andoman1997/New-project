@@ -4,16 +4,16 @@ import Link from 'next/link';
 import logoLarge from '/public/static/logos/logo-large.svg';
 
 import {
-  HeaderContainer,
   LeftContainer,
   LoginLink,
+  NavbarContainer,
   RightContainer,
   SignUpLink,
-} from './Header.styled';
+} from './Navbar.styled';
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <NavbarContainer>
       <LeftContainer>
         <Image src={logoLarge} alt="Provineer Logo" title="Provineer Logo" />
       </LeftContainer>
@@ -26,7 +26,7 @@ const Header = () => {
           <SignUpLink>Sign Up</SignUpLink>
         </Link>
       </RightContainer>
-    </HeaderContainer>
+    </NavbarContainer>
   );
 };
 
