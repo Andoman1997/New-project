@@ -10,7 +10,7 @@ export const NavbarContainer = styled.div`
   `};
 `;
 
-export const StyledLink = styled.a`
+export const StyledButton = styled.a`
   ${({ theme: { typography, radius } }) => css`
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ export const StyledLink = styled.a`
   `};
 `;
 
-export const LoginLink = styled(StyledLink)`
+export const LoginButton = styled(StyledButton)`
   ${({ theme: { colors, indents } }) => css`
     background-color: ${colors.white};
     color: ${colors.grey17};
@@ -34,7 +34,7 @@ export const LoginLink = styled(StyledLink)`
   `};
 `;
 
-export const SignUpLink = styled(StyledLink)`
+export const SignUpButton = styled(StyledButton)`
   ${({ theme: { colors } }) => css`
     background-color: ${colors.grey17};
     color: ${colors.white};
@@ -46,13 +46,7 @@ export const LeftContainer = styled.div`
   padding-left: 112px;
 `;
 
-export const RightContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 112px;
-`;
-
-export const NavbarLinkContainer = styled.div`
+export const MiddleContainer = styled.div`
   ${({ theme: { indents } }) => css`
     display: flex;
     justify-content: center;
@@ -61,16 +55,8 @@ export const NavbarLinkContainer = styled.div`
   `};
 `;
 
-export const NavbarLink = styled.a`
-  ${({ theme: { typography, colors } }) => css`
-    font-weight: 700;
-    font-size: ${typography.text.t16};
-    line-height: ${typography.text.t16};
-    color: ${colors.grey73};
-    font-feature-settings: 'ss03' on;
-
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  `};
+export const RightContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 112px;
 `;

@@ -4,13 +4,13 @@ import Logo from 'components/Logo';
 
 import {
   LeftContainer,
-  LoginLink,
+  LoginButton,
+  MiddleContainer,
   NavbarContainer,
-  NavbarLink,
-  NavbarLinkContainer,
   RightContainer,
-  SignUpLink,
+  SignUpButton,
 } from './Navbar.styled';
+import NavLinks from '../NavLinks/NavLinks';
 
 const Navbar = () => {
   return (
@@ -19,24 +19,16 @@ const Navbar = () => {
         <Logo />
       </LeftContainer>
 
-      <NavbarLinkContainer>
-        <Link href="/HowItWorks" passHref>
-          <NavbarLink>How it works</NavbarLink>
-        </Link>
-        <Link href="/about" passHref>
-          <NavbarLink>About</NavbarLink>
-        </Link>
-        <Link href="/faq" passHref>
-          <NavbarLink>FAQ</NavbarLink>
-        </Link>
-      </NavbarLinkContainer>
+      <MiddleContainer>
+        <NavLinks />
+      </MiddleContainer>
 
       <RightContainer>
         <Link href="/login" passHref>
-          <LoginLink>Login</LoginLink>
+          <LoginButton>Login</LoginButton>
         </Link>
         <Link href="/signup" passHref>
-          <SignUpLink>Sign Up</SignUpLink>
+          <SignUpButton>Sign Up</SignUpButton>
         </Link>
       </RightContainer>
     </NavbarContainer>
