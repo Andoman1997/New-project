@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 96px;
   background-color: #ffffff;
@@ -36,22 +35,20 @@ export const SignUpLink = styled(StyledLink)`
 
 export const LeftContainer = styled.div`
   display: flex;
-  flex: 20%;
   padding-left: 112px;
 `;
 
 export const RightContainer = styled.div`
   display: flex;
-  flex: 20%;
   justify-content: flex-end;
   padding-right: 112px;
 `;
 
 export const NavbarLinkContainer = styled.div`
   display: flex;
+  flex: 2;
   gap: 50px;
   justify-content: center;
-  flex: 60%;
 `;
 
 export const NavbarLink = styled.a`
@@ -61,7 +58,7 @@ export const NavbarLink = styled.a`
   color: #737373;
   font-feature-settings: 'ss03' on;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
