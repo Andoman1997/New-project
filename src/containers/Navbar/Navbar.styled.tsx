@@ -1,36 +1,44 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const NavbarContainer = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 96px;
-  background-color: #ffffff;
+  ${({ theme: { colors } }) => css`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    background-color: ${colors.white};
+  `};
 `;
 
 export const StyledLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: 40px;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  font-feature-settings: 'ss03' on;
+  ${({ theme: { typography, radius } }) => css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: ${radius.small};
+    font-weight: 700;
+    font-size: ${typography.text.t16};
+    line-height: ${typography.text.t14};
+    font-feature-settings: 'ss03' on;
+  `};
 `;
 
 export const LoginLink = styled(StyledLink)`
-  background-color: #ffffff;
-  color: #171717;
-  border: 1px solid #f4f4f4;
-  margin-right: 12px;
+  ${({ theme: { colors, indents } }) => css`
+    background-color: ${colors.white};
+    color: ${colors.grey17};
+    border: 1px solid ${colors.whiteF4};
+    margin-right: ${indents.i12};
+  `};
 `;
 
 export const SignUpLink = styled(StyledLink)`
-  background-color: #171717;
-  color: #ffffff;
+  ${({ theme: { colors } }) => css`
+    background-color: ${colors.grey17};
+    color: ${colors.white};
+  `};
 `;
 
 export const LeftContainer = styled.div`
@@ -45,20 +53,24 @@ export const RightContainer = styled.div`
 `;
 
 export const NavbarLinkContainer = styled.div`
-  display: flex;
-  flex: 2;
-  gap: 50px;
-  justify-content: center;
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    gap: ${indents.i50};
+  `};
 `;
 
 export const NavbarLink = styled.a`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  color: #737373;
-  font-feature-settings: 'ss03' on;
+  ${({ theme: { typography, colors } }) => css`
+    font-weight: 700;
+    font-size: ${typography.text.t16};
+    line-height: ${typography.text.t16};
+    color: ${colors.grey73};
+    font-feature-settings: 'ss03' on;
 
-  @media (max-width: 1024px) {
-    display: none;
-  }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  `};
 `;
