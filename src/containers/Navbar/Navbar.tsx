@@ -1,7 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import logoLarge from '/public/static/logos/logo-large.svg';
+import Logo from 'components/Logo';
 
 import {
   LeftContainer,
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <NavbarContainer>
       <LeftContainer>
-        <Image src={logoLarge} alt="Provineer Logo" title="Provineer Logo" />
+        <Logo />
       </LeftContainer>
 
       <NavbarLinkContainer>
