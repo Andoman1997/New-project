@@ -12,7 +12,7 @@ import {
   SignUpLink,
 } from './Navbar.styled';
 
-const Header = () => {
+const Navbar = () => {
   return (
     <NavbarContainer>
       <LeftContainer>
@@ -21,7 +21,7 @@ const Header = () => {
 
       <NavbarLinkContainer>
         <Link href="/HowItWorks" passHref>
-          <NavbarLink>How It works</NavbarLink>
+          <NavbarLink>How it works</NavbarLink>
         </Link>
         <Link href="/about" passHref>
           <NavbarLink>About</NavbarLink>
@@ -43,4 +43,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

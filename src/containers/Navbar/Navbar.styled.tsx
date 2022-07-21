@@ -17,7 +17,7 @@ export const StyledLink = styled.a`
   border-radius: 5px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 14px;
   font-feature-settings: 'ss03' on;
 `;
 
