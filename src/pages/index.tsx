@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import PageHead from '../containers/PageHead';
-import Header from '../containers/Navbar';
+import Header from '../containers/Navbar/Navbar';
 
 const Home: NextPage = () => (
   <>
