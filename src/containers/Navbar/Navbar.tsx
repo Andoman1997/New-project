@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Logo from 'components/Logo';
 
 import {
   LeftContainer,
@@ -9,8 +8,9 @@ import {
   NavbarContainer,
   RightContainer,
   SignUpButton,
-} from './styled';
-import NavLinks from '../NavLinks';
+} from './Navbar.styled';
+import Logo from 'components/logo/Logo';
+import NavLinks from '../NavLinks/NavLinks';
 
 const Navbar = () => {
   return (

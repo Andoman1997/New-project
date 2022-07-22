@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { NavLink, NavLinkContainer } from './styled';
+import { NavLink, NavLinkContainer } from './NavLinks.styled';
 
 const NavLinks = () => {
   return (
