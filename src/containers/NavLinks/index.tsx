@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { NavLink, NavLinkContainer } from './NavLinks.styled';
+import { NavLink, NavLinkContainer } from './styled';
 
-function NavLinks() {
+const NavLinks = () => {
   return (
     <NavLinkContainer>
       <Link href="/HowItWorks" passHref>
@@ -16,6 +16,6 @@ function NavLinks() {
       </Link>
     </NavLinkContainer>
   );
-}
+};
 
 export default NavLinks;
