@@ -7,11 +7,13 @@ import {
   LogoIcon,
   MiddleContainer,
   NavbarContainer,
+  NavLink,
+  NavLinkContainer,
   RightContainer,
   SignUpButton,
 } from './Navbar.styled';
-import NavLinks from '../NavLinks/NavLinks';
-import { useMediaQuery } from '../../Hooks/useMediaQuery';
+import { NavLinks } from '../NavLinks';
+import { useMediaQuery } from 'src/Hooks/useMediaQuery';
 import dynamic from 'next/dynamic';
 
 const Navbar = () => {
@@ -26,7 +28,13 @@ const Navbar = () => {
           </LeftContainer>
 
           <MiddleContainer>
-            <NavLinks />
+            <NavLinkContainer>
+              {NavLinks.map(({ name, to }) => (
+                <Link href={to}>
+                  <NavLink>{name}</NavLink>
+                </Link>
+              ))}
+            </NavLinkContainer>
           </MiddleContainer>
 
           <RightContainer>
