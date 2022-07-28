@@ -6,12 +6,13 @@ const styled = {
   default: styledComponents.default,
   css: styledComponents.css,
   ThemeProvider: styledComponents.ThemeProvider,
+  ThemeContext: styledComponents.ThemeContext,
   createGlobalStyle: styledComponents.createGlobalStyle,
 } as styledComponents.ThemedStyledComponentsModule<ThemeInterface>;
 
 export * from './theme';
 
-export const { css, createGlobalStyle, ThemeProvider } = styled;
+export const { css, createGlobalStyle, ThemeProvider, ThemeContext } = styled;
 
 export const GlobalStyle = createGlobalStyle<styledComponents.ThemeProps<ThemeInterface>>`
   ${({ theme }) => css`

@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import PageHead from '../containers/PageHead';
-import Header from '../containers/Navbar/Navbar';
+import Navbar from '../containers/Navbar/Navbar';
 
 const Home: NextPage = () => (
   <>
     <PageHead />
-    <Header />
+    <Navbar />
   </>
 );
 
