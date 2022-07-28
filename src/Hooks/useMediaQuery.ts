@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThemeInterface } from '../styled-components';
-import { useTheme } from '../utils';
+import { ThemeInterface } from 'src/styled-components';
+import { useTheme } from 'src/utils';
 
 type UseMediaQueryInput = (bp: ThemeInterface['breakpoints']) => string;
 
