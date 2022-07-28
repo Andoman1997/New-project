@@ -1,10 +1,11 @@
 function createBreakpoints() {
   const { values, unit, step } = {
     values: {
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
+      xxl: 1536,
+      xl: 1280,
+      lg: 1024,
+      md: 768,
+      sm: 640,
     },
     unit: 'px',
     step: 5,
