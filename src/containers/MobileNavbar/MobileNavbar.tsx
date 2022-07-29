@@ -1,7 +1,7 @@
 import React from 'react';
 import { AvatarIcon, NavbarContainer } from './MobileNavbar.styled';
 import Logo from 'src/components/Logo/Logo';
-import { useMediaQuery } from 'src/Hooks/useMediaQuery';
+import { useMediaQuery } from 'src/hooks/useMediaQuery';
 import MobileNavLinks from 'src/containers/MobileNavlinks/MobileNavLinks';
 
 const MobileNavbar = () => {

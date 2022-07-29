@@ -12,7 +12,7 @@ import {
   SignUpButton,
 } from './Navbar.styled';
 import { NavLinks } from '../NavLinks';
-import { useMediaQuery } from 'src/Hooks/useMediaQuery';
+import { useMediaQuery } from 'src/hooks/useMediaQuery';
 import dynamic from 'next/dynamic';
 import Logo from 'src/components/Logo/Logo';
 
