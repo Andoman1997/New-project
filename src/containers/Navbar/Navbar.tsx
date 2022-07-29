@@ -4,7 +4,6 @@ import Link from 'next/link';
 import {
   LeftContainer,
   LoginButton,
-  LogoIcon,
   MiddleContainer,
   NavbarContainer,
   NavLink,
@@ -15,6 +14,7 @@ import {
 import { NavLinks } from '../NavLinks';
 import { useMediaQuery } from 'src/Hooks/useMediaQuery';
 import dynamic from 'next/dynamic';
+import Logo from 'src/components/Logo/Logo';
 
 const Navbar = () => {
   const isDesktop = useMediaQuery(b => b.up('xl'));
@@ -24,7 +24,7 @@ const Navbar = () => {
       {isDesktop ? (
         <NavbarContainer>
           <LeftContainer>
-            <LogoIcon />
+            <Logo />
           </LeftContainer>
 
           <MiddleContainer>

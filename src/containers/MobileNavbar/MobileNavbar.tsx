@@ -1,11 +1,14 @@
-import React from 'react';
-import { AvatarIcon, BurgerIcon, LogoIcon, NavbarContainer } from './MobileNavbar.styled';
+import React, { useState } from 'react';
+import { AvatarIcon, BurgerIcon, CloseIcon, NavbarContainer } from './MobileNavbar.styled';
+import Logo from 'src/components/Logo/Logo';
 
 const MobileNavbar = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <NavbarContainer>
-      <BurgerIcon />
-      <LogoIcon />
+      {isOpen ? <CloseIcon /> : <BurgerIcon />}
+      <Logo />
       <AvatarIcon />
     </NavbarContainer>
   );

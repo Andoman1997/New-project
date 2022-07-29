@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     height: 96px;
     background-color: ${colors.white};
+    cursor: pointer;
   `};
 `;
 
@@ -23,11 +24,6 @@ export const StyledButton = styled.a`
     line-height: ${typography.text.t14};
     font-feature-settings: 'ss03' on;
   `};
-`;
-export const LogoIcon = styled.div`
-  background-image: url(/static/logos/logo-large.svg);
-  width: 141px;
-  height: 36px;
 `;
 
 export const LoginButton = styled(StyledButton)`

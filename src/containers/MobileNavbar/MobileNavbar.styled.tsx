@@ -16,9 +16,10 @@ export const BurgerIcon = styled.div`
   width: 24px;
   height: 24px;
 `;
-export const LogoIcon = styled.div`
-  background-image: url(/static/logos/logo-small.svg);
-  width: 96px;
+
+export const CloseIcon = styled.div`
+  background-image: url(/static/icons/Close.svg);
+  width: 24px;
   height: 24px;
 `;
 
