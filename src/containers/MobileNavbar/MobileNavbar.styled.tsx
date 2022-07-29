@@ -11,17 +11,6 @@ export const NavbarContainer = styled.div`
     margin-left: ${indents.i16};
   `};
 `;
-export const BurgerIcon = styled.div`
-  background-image: url(/static/icons/Burger.svg);
-  width: 24px;
-  height: 24px;
-`;
-
-export const CloseIcon = styled.div`
-  background-image: url(/static/icons/Close.svg);
-  width: 24px;
-  height: 24px;
-`;
 
 export const AvatarIcon = styled.div`
   background-image: url(/static/icons/Avatar.svg);
