@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-function PageHead() {
+const PageHead = () => {
   return (
     <div>
       <Head>
@@ -10,6 +10,6 @@ function PageHead() {
       </Head>
     </div>
   );
-}
+};
 
 export default PageHead;

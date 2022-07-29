@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MenuToggle } from 'src/containers/menuToggle';
 import { NavLinks } from 'src/containers/NavLinks';
 
-function MobileNavLinks() {
+const MobileNavLinks = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -21,6 +21,6 @@ function MobileNavLinks() {
       )}
     </NavLinksContainer>
   );
-}
+};
 
 export default MobileNavLinks;
