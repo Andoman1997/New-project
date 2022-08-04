@@ -31,7 +31,6 @@ export const NavLink = styled.a`
     font-weight: 700;
     line-height: ${typography.text.t16};
     font-size: ${typography.text.t16};
-    font-feature-settings: 'ss03' on;
     border-bottom: 1px solid ${colors.whiteF4};
   `};
 `;

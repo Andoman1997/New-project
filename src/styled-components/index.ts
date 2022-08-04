@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle<styledComponents.ThemeProps<ThemeIn
       overflow: hidden;
       background-color: ${theme.colors.whiteFc};
       font-family: Satoshi-variable, sans-serif;
+      font-feature-settings: 'ss03' on;
     }
 
     a {

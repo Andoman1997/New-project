@@ -22,7 +22,6 @@ export const StyledButton = styled.a`
     font-weight: 700;
     font-size: ${typography.text.t16};
     line-height: ${typography.text.t14};
-    font-feature-settings: 'ss03' on;
   `};
 `;
 
@@ -70,7 +69,6 @@ export const NavLink = styled.a`
     font-size: ${typography.text.t16};
     line-height: ${typography.text.t16};
     color: ${colors.grey73};
-    font-feature-settings: 'ss03' on;
   `};
 `;
 
