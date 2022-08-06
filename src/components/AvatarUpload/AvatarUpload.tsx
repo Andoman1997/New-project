@@ -3,7 +3,7 @@ import type { RcFile, UploadProps } from 'antd/es/upload';
 import type { UploadFile } from 'antd/es/upload/interface';
 import ImgCrop from 'antd-img-crop';
 
-import { UploadBox, UploadIcon } from './ImgUpload.styled';
+import { UploadBox, UploadIcon } from './AvatarUpload.styled';
 import { Modal } from 'antd';
 
 const getBase64 = (file: RcFile): Promise<string> =>
