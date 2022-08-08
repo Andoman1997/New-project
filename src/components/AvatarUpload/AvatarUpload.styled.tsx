@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Upload } from 'antd';
+import 'lib/upload/style/index.css';
 
 export const UploadBox = styled(Upload)`
   .ant-upload {
