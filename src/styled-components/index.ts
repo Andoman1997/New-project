@@ -1,6 +1,4 @@
 import * as styledComponents from 'styled-components';
-import 'antd/dist/antd.variable.min.css';
-
 import { ThemeInterface } from './theme';
 
 const styled = {
