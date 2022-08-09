@@ -3,12 +3,21 @@ import { Upload } from 'antd';
 import 'antd/lib/upload/style/index.css';
 
 export const UploadBox = styled(Upload)`
+  margin-bottom: 12px;
+
   ${({ theme: { colors } }) => css`
     .ant-upload {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+
+    .ant-upload-list-picture-card-container {
+      width: 124px;
+      height: 124px;
+      margin-right: 0;
+      margin-bottom: 0;
     }
 
     .ant-upload.ant-upload-select-picture-card {
@@ -21,11 +30,6 @@ export const UploadBox = styled(Upload)`
 
     .ant-upload.ant-upload-select-picture-card:hover {
       border-color: ${colors.grey17};
-    }
-
-    .ant-upload-list-item {
-      width: 124px;
-      height: 124px;
     }
   `};
 `;
@@ -41,7 +45,6 @@ export const UploadText = styled.div`
     margin-top: ${indents.i12};
     font-family: 'Satoshi Variable', sans-serif;
     font-feature-settings: 'ss03' on;
-    font-size: ${typography.t14};
     line-height: ${typography.t20};
     color: ${colors.black00};
   `};
