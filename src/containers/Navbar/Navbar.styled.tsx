@@ -38,6 +38,10 @@ export const SignUpButton = styled(StyledButton)`
   ${({ theme: { colors } }) => css`
     background-color: ${colors.grey17};
     color: ${colors.white};
+
+    &:hover {
+      color: ${colors.white};
+    }
   `};
 `;
 

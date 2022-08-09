@@ -3,7 +3,7 @@ import type { RcFile, UploadProps } from 'antd/es/upload';
 import type { UploadFile } from 'antd/es/upload/interface';
 import ImgCrop from 'antd-img-crop';
 
-import { UploadBox, UploadIcon } from './AvatarUpload.styled';
+import { UploadBox, UploadIcon, UploadText } from './AvatarUpload.styled';
 import { Modal } from 'antd';
 
 const getBase64 = (file: RcFile): Promise<string> =>
@@ -38,7 +38,7 @@ const AvatarUpload: React.FC = () => {
   const uploadButton = (
     <>
       <UploadIcon />
-      <div style={{ marginTop: 8 }}>Upload Image</div>
+      <UploadText>Upload Image</UploadText>
     </>
   );
 
@@ -46,7 +46,6 @@ const AvatarUpload: React.FC = () => {
     <>
       <ImgCrop grid rotate>
         <UploadBox
-          action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
           listType="picture-card"
           fileList={fileList}
           onPreview={handlePreview}

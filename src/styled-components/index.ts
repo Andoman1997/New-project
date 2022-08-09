@@ -1,5 +1,6 @@
 import * as styledComponents from 'styled-components';
 import { ThemeInterface } from './theme';
+import 'antd/dist/antd.css';
 
 const styled = {
   default: styledComponents.default,
@@ -28,6 +29,10 @@ export const GlobalStyle = createGlobalStyle<styledComponents.ThemeProps<ThemeIn
     a {
       color: inherit;
       text-decoration: none;
+
+      &:hover {
+        color: unset;
+      }
     }
 
     @font-face {
