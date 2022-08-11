@@ -2,12 +2,15 @@ import React from 'react';
 import {
   Container,
   FormContainer,
+  Input,
+  InputWrapper,
   NameInputContainer,
   NameInputGroup,
+  TextBox,
+  TextBoxWrapper,
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
-import TextInput from 'src/components/TextInput/TextInput';
 
 const Signup = () => {
   return (
@@ -17,11 +20,21 @@ const Signup = () => {
         <NameInputContainer>
           <AvatarUpload />
           <NameInputGroup>
-            <TextInput type="text" label="First Name" />
-            <TextInput type="text" label="Last Name" />
+            <InputWrapper>
+              <Input type="text" placeholder=" " />
+              <label>First Name</label>
+            </InputWrapper>
+            <InputWrapper>
+              <Input type="text" placeholder=" " />
+              <label>Last Name</label>
+            </InputWrapper>
           </NameInputGroup>
         </NameInputContainer>
-        <textarea />
+
+        <TextBoxWrapper>
+          <TextBox placeholder=" " />
+          <label>Bio (Optional)</label>
+        </TextBoxWrapper>
       </FormContainer>
     </Container>
   );
