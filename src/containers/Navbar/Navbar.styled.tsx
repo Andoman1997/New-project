@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
   ${({ theme: { colors } }) => css`
     display: flex;
     align-items: center;
