@@ -21,34 +21,36 @@ const Navbar = () => {
   const MobileNavbar = dynamic(() => import('../MobileNavbar/MobileNavbar'), { ssr: false });
   return (
     <>
-      {isDesktop ? (
-        <NavbarContainer>
-          <LeftContainer>
-            <Logo />
-          </LeftContainer>
+      <header>
+        {isDesktop ? (
+          <NavbarContainer>
+            <LeftContainer>
+              <Logo />
+            </LeftContainer>
 
-          <MiddleContainer>
-            <NavLinkContainer>
-              {NavLinks.map(({ name, to }) => (
-                <Link href={to}>
-                  <NavLink>{name}</NavLink>
-                </Link>
-              ))}
-            </NavLinkContainer>
-          </MiddleContainer>
+            <MiddleContainer>
+              <NavLinkContainer>
+                {NavLinks.map(({ name, to }) => (
+                  <Link href={to}>
+                    <NavLink>{name}</NavLink>
+                  </Link>
+                ))}
+              </NavLinkContainer>
+            </MiddleContainer>
 
-          <RightContainer>
-            <Link href="/login" passHref>
-              <LoginButton>Login</LoginButton>
-            </Link>
-            <Link href="/signup" passHref>
-              <SignUpButton>Sign Up</SignUpButton>
-            </Link>
-          </RightContainer>
-        </NavbarContainer>
-      ) : (
-        <MobileNavbar />
-      )}
+            <RightContainer>
+              <Link href="/login" passHref>
+                <LoginButton>Login</LoginButton>
+              </Link>
+              <Link href="/signup" passHref>
+                <SignUpButton>Sign Up</SignUpButton>
+              </Link>
+            </RightContainer>
+          </NavbarContainer>
+        ) : (
+          <MobileNavbar />
+        )}
+      </header>
     </>
   );
 };
