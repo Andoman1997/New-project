@@ -119,6 +119,7 @@ export const TextBox = styled.textarea`
     margin: auto auto 12px auto;
     outline: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    resize: none;
 
     &:hover {
       border-color: ${colors.grey17};
