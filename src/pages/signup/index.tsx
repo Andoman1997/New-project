@@ -1,7 +1,10 @@
 import React from 'react';
 import {
+  AvatarUploadWrapper,
   Container,
   FormContainer,
+  InfoInput,
+  InfoInputWrapper,
   Input,
   InputWrapper,
   NameInputContainer,
@@ -18,7 +21,9 @@ const Signup = () => {
       <Title>Sign Up</Title>
       <FormContainer>
         <NameInputContainer>
-          <AvatarUpload />
+          <AvatarUploadWrapper>
+            <AvatarUpload />
+          </AvatarUploadWrapper>
           <NameInputGroup>
             <InputWrapper>
               <Input type="text" placeholder=" " />
@@ -35,6 +40,18 @@ const Signup = () => {
           <TextBox placeholder=" " />
           <label>Bio (Optional)</label>
         </TextBoxWrapper>
+        <InfoInputWrapper>
+          <InfoInput type="email" placeholder=" " />
+          <label>Email Address</label>
+        </InfoInputWrapper>
+        <InfoInputWrapper>
+          <InfoInput type="password" placeholder=" " />
+          <label>Password</label>
+        </InfoInputWrapper>
+        <InfoInputWrapper>
+          <InfoInput type="password" placeholder=" " />
+          <label>Confirm Password</label>
+        </InfoInputWrapper>
       </FormContainer>
     </Container>
   );

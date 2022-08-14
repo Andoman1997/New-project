@@ -4,13 +4,17 @@ export const Container = styled.div`
   ${({ theme: { colors, radius } }) => css`
     display: flex;
     margin: 145px auto;
-    max-width: 600px;
+    max-width: 590px;
     height: 790px;
     background-color: ${colors.white};
     border: 1px solid ${colors.whiteF4};
     border-radius: ${radius.small};
     flex-direction: column;
   `};
+`;
+export const AvatarUploadWrapper = styled.div`
+  height: 124px;
+  width: 124px;
 `;
 
 export const Title = styled.div`
@@ -38,10 +42,12 @@ export const NameInputContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 124px;
+  margin-bottom: 12px;
 `;
 
 export const NameInputGroup = styled.div`
   flex-direction: column;
+  width: 100%;
 `;
 
 export const InputWrapper = styled.div`
@@ -60,7 +66,7 @@ export const InputWrapper = styled.div`
       transform-origin: top left;
       transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
       line-height: ${typography.text.t20};
-      left: 16px;
+      left: 18px;
       padding-left: ${indents.i10};
     }
 
@@ -73,13 +79,12 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
   ${({ theme: { indents, colors, radius } }) => css`
     height: 55px;
-    width: 390px;
     margin-left: ${indents.i12};
     margin-bottom: ${indents.i12};
     border: 1px solid ${colors.whiteF4};
     border-radius: ${radius.small};
     color: ${colors.grey17};
-    padding: ${indents.i20} ${indents.i16} ${indents.i4} ${indents.i16};
+    padding: ${indents.i16} 0 ${indents.i4} 14px;
     outline: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -97,7 +102,7 @@ export const Input = styled.input`
     &:not(:placeholder-shown),
     &:-webkit-autofill {
       + label {
-        transform: translate(5px, 10px) scale(0.8);
+        transform: translate(0, 5px) scale(0.8);
       }
     }
   `};
@@ -105,13 +110,13 @@ export const Input = styled.input`
 
 export const TextBox = styled.textarea`
   ${({ theme: { indents, colors, radius } }) => css`
-    margin: ${indents.i12} auto;
     height: 93px;
     width: 100%;
     border: 1px solid ${colors.whiteF4};
     border-radius: ${radius.small};
     color: ${colors.grey17};
-    padding: ${indents.i20} 0 ${indents.i4} ${indents.i22};
+    padding: ${indents.i16} 0 ${indents.i4} 14px;
+    margin: auto auto 12px auto;
     outline: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -129,21 +134,35 @@ export const TextBox = styled.textarea`
     &:not(:placeholder-shown),
     &:-webkit-autofill {
       + label {
-        transform: translate(0, 10px) scale(0.8);
+        transform: translate(0, 5px) scale(0.8);
       }
     }
   `};
 `;
 
 export const TextBoxWrapper = styled(InputWrapper)`
-  ${({ theme: { indents } }) => css`
-    label {
-      padding: ${indents.i12} ${indents.i10} 0;
-      transform: translate(0, 30px) scale(1);
-    }
+  label {
+    left: 6px;
+  }
+`;
 
-    &:focus-within label {
-      transform: translate(0, 10px) scale(0.8);
-    }
+export const InfoInputWrapper = styled(InputWrapper)`
+  label {
+    left: 6px;
+  }
+`;
+
+export const InfoInput = styled(Input)`
+  ${({ theme: { indents } }) => css`
+    width: 100%;
+    margin: auto auto 12px auto;
+    padding: ${indents.i16} 0 ${indents.i4} 14px;
+
+    &:focus,
+    &:not(:placeholder-shown),
+    &:-webkit-autofill {
+      + label {
+        transform: translate(0, 5px) scale(0.8);
+      }
   `};
 `;
