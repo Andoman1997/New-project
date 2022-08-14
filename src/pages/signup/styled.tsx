@@ -146,11 +146,7 @@ export const TextBoxWrapper = styled(InputWrapper)`
   }
 `;
 
-export const InfoInputWrapper = styled(InputWrapper)`
-  label {
-    left: 6px;
-  }
-`;
+export const InfoInputWrapper = styled(TextBoxWrapper)``;
 
 export const InfoInput = styled(Input)`
   ${({ theme: { indents } }) => css`
