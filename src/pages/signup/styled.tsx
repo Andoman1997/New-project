@@ -157,12 +157,5 @@ export const InfoInput = styled(Input)`
     width: 100%;
     margin: auto auto 12px auto;
     padding: ${indents.i16} 0 ${indents.i4} 14px;
-
-    &:focus,
-    &:not(:placeholder-shown),
-    &:-webkit-autofill {
-      + label {
-        transform: translate(0, 5px) scale(0.8);
-      }
   `};
 `;
