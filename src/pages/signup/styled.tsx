@@ -156,15 +156,3 @@ export const InfoInput = styled(Input)`
     padding: ${indents.i16} 0 ${indents.i4} 14px;
   `};
 `;
-
-export const EyeIconButton = styled.button`
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  width: 30px;
-  z-index: 1000;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-`;

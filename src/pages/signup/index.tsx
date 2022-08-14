@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import {
   AvatarUploadWrapper,
   Container,
-  EyeIconButton,
   FormContainer,
   InfoInput,
   InfoInputWrapper,
@@ -16,15 +15,10 @@ import {
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
-import { EyeInvisibleOutlined, EyeOutlined } from '@ant-design/icons';
+import usePasswordToggle from 'src/hooks/usePasswordToggle';
 
 const Signup: React.FC = () => {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
-
-  const togglePassword = (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    setShowPassword(!showPassword);
-  };
+  const [PasswordInputType, ToggleIcon] = usePasswordToggle();
 
   return (
     <Container>
@@ -59,11 +53,9 @@ const Signup: React.FC = () => {
           <label>Password</label>
         </InfoInputWrapper>
         <InfoInputWrapper>
-          <InfoInput type={showPassword ? 'text' : 'password'} placeholder=" " />
+          <InfoInput type={PasswordInputType as string} placeholder=" " />
           <label>Confirm Password</label>
-          <EyeIconButton onClick={togglePassword}>
-            {showPassword ? <EyeOutlined /> : <EyeInvisibleOutlined />}
-          </EyeIconButton>
+          {ToggleIcon}
         </InfoInputWrapper>
       </FormContainer>
     </Container>
