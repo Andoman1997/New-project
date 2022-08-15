@@ -117,7 +117,7 @@ export const TextBox = styled.textarea`
     border: 1px solid ${colors.whiteF4};
     border-radius: ${radius.small};
     color: ${colors.grey17};
-    padding: ${indents.i16} 0 ${indents.i4} 14px;
+    padding: ${indents.i16} 0 ${indents.i4} ${indents.i14};
     margin: auto auto ${indents.i12};
     outline: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
@@ -155,6 +155,6 @@ export const InfoInput = styled(Input)`
   ${({ theme: { indents } }) => css`
     width: 100%;
     margin: auto auto ${indents.i12};
-    padding: ${indents.i16} 0 ${indents.i4} 14px;
+    padding: ${indents.i16} 0 ${indents.i4} ${indents.i14};
   `};
 `;
