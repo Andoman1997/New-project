@@ -26,7 +26,7 @@ const usePasswordToggle = () => {
     </EyeIconButton>
   );
 
-  const InputType: string = (showPassword ? 'text' : 'password') as string;
+  const InputType = showPassword ? 'text' : 'password';
 
   return [InputType, ShowButton];
 };
