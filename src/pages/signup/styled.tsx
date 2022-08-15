@@ -39,10 +39,12 @@ export const FormContainer = styled.form`
 `;
 
 export const NameInputContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 124px;
-  margin-bottom: 12px;
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    flex-direction: row;
+    height: 124px;
+    margin-bottom: ${indents.i12};
+  `};
 `;
 
 export const NameInputGroup = styled.div`
@@ -116,7 +118,7 @@ export const TextBox = styled.textarea`
     border-radius: ${radius.small};
     color: ${colors.grey17};
     padding: ${indents.i16} 0 ${indents.i4} 14px;
-    margin: auto auto 12px auto;
+    margin: auto auto ${indents.i12};
     outline: none;
     transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
     resize: none;
@@ -152,7 +154,7 @@ export const InfoInputWrapper = styled(TextBoxWrapper)``;
 export const InfoInput = styled(Input)`
   ${({ theme: { indents } }) => css`
     width: 100%;
-    margin: auto auto 12px auto;
+    margin: auto auto ${indents.i12};
     padding: ${indents.i16} 0 ${indents.i4} 14px;
   `};
 `;
