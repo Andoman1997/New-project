@@ -17,7 +17,7 @@ export const AvatarUploadWrapper = styled.div`
   width: 124px;
 `;
 
-export const Title = styled.div`
+export const Title = styled.p`
   ${({ theme: { colors, typography, indents } }) => css`
     text-align: center;
     height: 45px;
