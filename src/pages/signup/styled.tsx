@@ -158,3 +158,8 @@ export const InfoInput = styled(Input)`
     padding: ${indents.i16} 0 ${indents.i4} ${indents.i14};
   `};
 `;
+
+export const SelectBox = styled(InputWrapper)`
+  flex-direction: row;
+  gap: 12px;
+`;

@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import {
   AvatarUploadWrapper,
   Container,
@@ -10,15 +9,41 @@ import {
   InputWrapper,
   NameInputContainer,
   NameInputGroup,
+  SelectBox,
   TextBox,
   TextBoxWrapper,
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
-import usePasswordToggle from 'src/hooks/usePasswordToggle';
+import PasswordInput from 'src/components/Inputs/PasswordInput';
+import Select from 'src/components/Select/Select';
+import { Option } from 'src/types';
+
+const IndustryList: Option[] = [
+  {
+    label: 'Development',
+    value: 'development',
+  },
+  {
+    label: 'Design',
+    value: 'design',
+  },
+];
+
+const OccupationList: Option[] = [
+  {
+    label: 'Developer',
+    value: 'developer',
+  },
+  {
+    label: 'Designer',
+    value: 'designer',
+  },
+];
 
 const Signup: React.FC = () => {
-  const [PasswordInputType, ToggleIcon] = usePasswordToggle();
+  // const [PasswordInputType, ToggleIcon] = usePasswordToggle();
+  const [selectedItem, setSelectedItem] = useState<Option | null>(null);
 
   return (
     <Container>
@@ -48,15 +73,23 @@ const Signup: React.FC = () => {
           <InfoInput type="email" placeholder=" " />
           <label>Email Address</label>
         </InfoInputWrapper>
-        <InfoInputWrapper>
-          <InfoInput type="password" placeholder=" " />
-          <label>Password</label>
-        </InfoInputWrapper>
-        <InfoInputWrapper>
-          <InfoInput type={PasswordInputType as string} placeholder=" " />
-          <label>Confirm Password</label>
-          {ToggleIcon}
-        </InfoInputWrapper>
+        <PasswordInput label="Password" />
+        <PasswordInput label="Confirm Password" />
+
+        <SelectBox>
+          <Select
+            placeholder="Industry"
+            selected={selectedItem}
+            options={IndustryList}
+            onChange={(selection: Option) => setSelectedItem(selection)}
+          />
+          <Select
+            placeholder="Occupation"
+            selected={selectedItem}
+            options={OccupationList}
+            onChange={(selection: Option) => setSelectedItem(selection)}
+          />
+        </SelectBox>
       </FormContainer>
     </Container>
   );
