@@ -18,7 +18,7 @@ interface PassProps {
 }
 
 const PasswordInput: React.FC<PassProps> = ({ label }) => {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
   const toggle = (e: React.MouseEvent<HTMLElement>): void => {
     e.preventDefault();
