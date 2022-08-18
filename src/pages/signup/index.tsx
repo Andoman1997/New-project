@@ -3,21 +3,17 @@ import {
   AvatarUploadWrapper,
   Container,
   FormContainer,
-  InfoInput,
-  InfoInputWrapper,
-  Input,
-  InputWrapper,
-  NameInputContainer,
-  NameInputGroup,
   SelectBox,
-  TextBox,
-  TextBoxWrapper,
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
 import PasswordInput from 'src/components/Inputs/PasswordInput';
 import Select from 'src/components/Select/Select';
 import { Option } from 'src/types';
+import { NameInputContainer, NameInputGroup } from 'src/components/Inputs/Input.styled';
+import NameInput from 'src/components/Inputs/NameInput';
+import TextInput from 'src/components/Inputs/TextInput';
+import EmailInput from 'src/components/Inputs/EmailInput';
 
 const IndustryList: Option[] = [
   {
@@ -42,7 +38,6 @@ const OccupationList: Option[] = [
 ];
 
 const Signup: React.FC = () => {
-  // const [PasswordInputType, ToggleIcon] = usePasswordToggle();
   const [selectedItem, setSelectedItem] = useState<Option | null>(null);
 
   return (
@@ -54,28 +49,14 @@ const Signup: React.FC = () => {
             <AvatarUpload />
           </AvatarUploadWrapper>
           <NameInputGroup>
-            <InputWrapper>
-              <Input type="text" placeholder=" " />
-              <label>First Name</label>
-            </InputWrapper>
-            <InputWrapper>
-              <Input type="text" placeholder=" " />
-              <label>Last Name</label>
-            </InputWrapper>
+            <NameInput label="First Name" />
+            <NameInput label="Last Name" />
           </NameInputGroup>
         </NameInputContainer>
-
-        <TextBoxWrapper>
-          <TextBox placeholder=" " />
-          <label>Bio (Optional)</label>
-        </TextBoxWrapper>
-        <InfoInputWrapper>
-          <InfoInput type="email" placeholder=" " />
-          <label>Email Address</label>
-        </InfoInputWrapper>
+        <TextInput label="Bio (Optional)" />
+        <EmailInput label="Email Address" />
         <PasswordInput label="Password" />
         <PasswordInput label="Confirm Password" />
-
         <SelectBox>
           <Select
             placeholder="Industry"

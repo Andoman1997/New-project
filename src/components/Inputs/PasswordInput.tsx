@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { EyeInvisibleOutlined, EyeOutlined } from '@ant-design/icons';
-import { InfoInput, InfoInputWrapper } from 'src/pages/signup/styled';
+import { InfoInput, InfoInputWrapper } from 'src/components/Inputs/Input.styled';
 
 export const EyeIconButton = styled.button`
   position: absolute;
