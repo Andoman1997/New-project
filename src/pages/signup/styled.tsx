@@ -39,6 +39,20 @@ export const FormContainer = styled.form`
   `};
 `;
 
+export const NameInputContainer = styled.div`
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    flex-direction: row;
+    height: 124px;
+    margin-bottom: ${indents.i12};
+  `};
+`;
+
+export const NameInputGroup = styled.div`
+  flex-direction: column;
+  width: 100%;
+`;
+
 export const SelectBox = styled(InputWrapper)`
   flex-direction: row;
   gap: 12px;

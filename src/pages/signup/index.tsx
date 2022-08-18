@@ -3,6 +3,8 @@ import {
   AvatarUploadWrapper,
   Container,
   FormContainer,
+  NameInputContainer,
+  NameInputGroup,
   SelectBox,
   Title,
 } from 'src/pages/signup/styled';
@@ -10,7 +12,6 @@ import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
 import PasswordInput from 'src/components/Inputs/PasswordInput';
 import Select from 'src/components/Select/Select';
 import { Option } from 'src/types';
-import { NameInputContainer, NameInputGroup } from 'src/components/Inputs/Input.styled';
 import NameInput from 'src/components/Inputs/NameInput';
 import TextInput from 'src/components/Inputs/TextInput';
 import EmailInput from 'src/components/Inputs/EmailInput';
@@ -38,7 +39,8 @@ const OccupationList: Option[] = [
 ];
 
 const Signup: React.FC = () => {
-  const [selectedItem, setSelectedItem] = useState<Option | null>(null);
+  const [selectedIndustry, setSelectedIndustry] = useState<Option | null>(null);
+  const [selectedOccupation, setSelectedOccupation] = useState<Option | null>(null);
 
   return (
     <Container>
@@ -60,15 +62,15 @@ const Signup: React.FC = () => {
         <SelectBox>
           <Select
             placeholder="Industry"
-            selected={selectedItem}
+            selected={selectedIndustry}
             options={IndustryList}
-            onChange={(selection: Option) => setSelectedItem(selection)}
+            onChange={(selection: Option) => setSelectedIndustry(selection)}
           />
           <Select
             placeholder="Occupation"
-            selected={selectedItem}
+            selected={selectedOccupation}
             options={OccupationList}
-            onChange={(selection: Option) => setSelectedItem(selection)}
+            onChange={(selection: Option) => setSelectedOccupation(selection)}
           />
         </SelectBox>
       </FormContainer>

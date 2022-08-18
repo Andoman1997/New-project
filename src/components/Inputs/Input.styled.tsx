@@ -1,19 +1,5 @@
 import styled, { css } from 'styled-components';
 
-export const NameInputContainer = styled.div`
-  ${({ theme: { indents } }) => css`
-    display: flex;
-    flex-direction: row;
-    height: 124px;
-    margin-bottom: ${indents.i12};
-  `};
-`;
-
-export const NameInputGroup = styled.div`
-  flex-direction: column;
-  width: 100%;
-`;
-
 export const InputWrapper = styled.div`
   ${({ theme: { colors, indents, typography } }) => css`
     position: relative;
