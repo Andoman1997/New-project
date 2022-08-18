@@ -1,30 +1,11 @@
 import styled, { css } from 'styled-components';
 
 export const SelectWrapper = styled.div`
-  ${({ theme: { colors, indents, typography } }) => css`
-    display: flex;
-    position: relative;
-
-    width: 100%;
-    flex-direction: column;
-
-    label {
-      position: absolute;
-      pointer-events: none;
-      color: ${colors.greyA3};
-      transform: translate(0, 18px) scale(1);
-      transform-origin: top left;
-      transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-      line-height: ${typography.text.t20};
-      left: 18px;
-      padding-left: ${indents.i10};
-    }
-
-    &:focus-within label {
-      transform: translate(5px, 10px) scale(0.8);
-    }
-  `};
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 `;
+
 export const SelectContent = styled.div`
   ${({ theme: { indents, colors, radius, typography } }) => css`
     display: flex;
@@ -47,21 +28,6 @@ export const SelectContent = styled.div`
 
     &:hover {
       border-color: ${colors.grey17};
-    }
-
-    &:focus {
-      outline: none !important;
-      border: 1px solid ${colors.grey17};
-      box-shadow: 0 0 10px ${colors.greyA9};
-    }
-
-    &:focus,
-    &:active,
-    &:not(:placeholder-shown),
-    &:-webkit-autofill {
-      + label {
-        transform: translate(0, 5px) scale(0.8);
-      }
     }
   `};
 `;
@@ -91,6 +57,7 @@ export const Options = styled.div`
     }
   `};
 `;
+
 export const DownIcon = styled.div`
   align-self: center;
   background-image: url(static/icons/Down.svg);
