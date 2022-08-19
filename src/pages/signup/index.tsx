@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import {
+  AgreementWrapper,
   AvatarUploadWrapper,
+  CheckboxInput,
+  CheckboxWrapper,
   Container,
   FormContainer,
   NameInputContainer,
   NameInputGroup,
   SelectBox,
+  SignInText,
+  Terms,
+  TermsLink,
+  Text,
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
@@ -15,6 +22,7 @@ import { Option } from 'src/types';
 import NameInput from 'src/components/Inputs/NameInput';
 import TextInput from 'src/components/Inputs/TextInput';
 import EmailInput from 'src/components/Inputs/EmailInput';
+import Link from 'next/link';
 
 const IndustryList: Option[] = [
   {
@@ -73,6 +81,18 @@ const Signup: React.FC = () => {
             onChange={(selection: Option) => setSelectedOccupation(selection)}
           />
         </SelectBox>
+        <AgreementWrapper>
+          <CheckboxWrapper>
+            <CheckboxInput type="checkbox" />
+            <Text>I agree with</Text>
+            <TermsLink href="/terms" passHref>
+              <Terms>Terms and Conditions</Terms>
+            </TermsLink>
+          </CheckboxWrapper>
+          <Link href="/login" passHref>
+            <SignInText>Sign In</SignInText>
+          </Link>
+        </AgreementWrapper>
       </FormContainer>
     </Container>
   );
