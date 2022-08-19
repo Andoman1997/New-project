@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const SelectWrapper = styled.div`
-  display: flex;
   width: 100%;
+  position: relative;
   flex-direction: column;
 `;
 
@@ -34,9 +34,11 @@ export const SelectContent = styled.div`
 
 export const Options = styled.div`
   ${({ theme: { indents, colors, radius, typography } }) => css`
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     padding: 0;
+    position: absolute;
     width: 100%;
+    z-index: 1000;
 
     option {
       display: flex;
@@ -44,7 +46,6 @@ export const Options = styled.div`
       background-color: ${colors.white};
       font-size: ${typography.text.t14};
       padding: ${indents.i10} ${indents.i16};
-      width: 100%;
       text-align: left;
       border-radius: ${radius.small};
 
