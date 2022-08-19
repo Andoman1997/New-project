@@ -9,7 +9,9 @@ const colors = {
   whiteF4: '#f4f4f4',
   whiteFc: '#fcfcfc',
 
-  black00: '#000000',
+  black: '#000000',
+
+  royalBlue: '#3e82e7',
 };
 
 export default colors;
