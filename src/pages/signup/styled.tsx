@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { InputWrapper } from 'src/components/Inputs/Input.styled';
+import Link from 'next/link';
 
 export const Container = styled.div`
   ${({ theme: { colors, radius } }) => css`
@@ -56,4 +57,52 @@ export const NameInputGroup = styled.div`
 export const SelectBox = styled(InputWrapper)`
   flex-direction: row;
   gap: 12px;
+`;
+
+export const CheckboxWrapper = styled.div`
+  width: auto;
+`;
+
+export const AgreementWrapper = styled.div`
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    margin-top: ${indents.i24};
+    justify-content: space-between;
+  `};
+`;
+export const CheckboxInput = styled.input`
+  ${({ theme: { colors } }) => css`
+    accent-color: ${colors.whiteF4};
+  `};
+`;
+
+export const TermsLink = styled(Link)`
+  font-weight: bold;
+  cursor: pointer;
+`;
+
+export const Terms = styled.span`
+  ${({ theme: { indents, colors } }) => css`
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: ${indents.i6};
+    border-bottom: 1px solid ${colors.black};
+  `};
+`;
+export const Text = styled.span`
+  ${({ theme: { indents, typography } }) => css`
+    margin-left: ${indents.i8};
+    font-size: ${typography.text.t16};
+    line-height: 100%;
+  `};
+`;
+
+export const SignInText = styled.span`
+  ${({ theme: { typography, colors } }) => css`
+    cursor: pointer;
+    color: ${colors.royalBlue};
+    font-size: ${typography.text.t16};
+    font-weight: 550;
+    line-height: 100%;
+  `};
 `;
