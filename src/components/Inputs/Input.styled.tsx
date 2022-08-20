@@ -6,7 +6,6 @@ export const InputWrapper = styled.div`
     display: flex;
     flex-direction: column;
     font-family: 'Satoshi Variable', sans-serif;
-    font-feature-settings: 'ss03' on;
 
     label {
       position: absolute;
@@ -16,7 +15,7 @@ export const InputWrapper = styled.div`
       transform-origin: top left;
       transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
       line-height: ${typography.text.t20};
-      left: 18px;
+      left: ${indents.i18};
       padding-left: ${indents.i10};
     }
 
@@ -92,11 +91,12 @@ export const TextBox = styled.textarea`
 `;
 
 export const TextBoxWrapper = styled(InputWrapper)`
-  label {
-    left: 6px;
-  }
+  ${({ theme: { indents } }) => css`
+    label {
+      left: ${indents.i6};
+    }
+  `};
 `;
-
 export const InfoInputWrapper = styled(TextBoxWrapper)``;
 
 export const InfoInput = styled(Input)`

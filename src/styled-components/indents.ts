@@ -6,6 +6,7 @@ const indents = {
   i12: '12px',
   i14: '14px',
   i16: '16px',
+  i18: '18px',
   i20: '20px',
   i22: '22px',
   i24: '24px',

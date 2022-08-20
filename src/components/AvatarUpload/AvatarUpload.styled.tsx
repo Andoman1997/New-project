@@ -33,7 +33,7 @@ export const UploadBox = styled(Upload)`
 `;
 
 export const UploadIcon = styled.div`
-  background-image: url(static/icons/Upload.svg);
+  background-image: url('/static/icons/Upload.svg');
   width: 24px;
   height: 24px;
 `;
@@ -42,7 +42,6 @@ export const UploadText = styled.div`
   ${({ theme: { colors, indents, typography } }) => css`
     margin-top: ${indents.i12};
     font-family: 'Satoshi Variable', sans-serif;
-    font-feature-settings: 'ss03' on;
     line-height: ${typography.t20};
     color: ${colors.black00};
   `};

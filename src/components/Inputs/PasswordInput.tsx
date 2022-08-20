@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { EyeInvisibleOutlined, EyeOutlined } from '@ant-design/icons';
 import { InfoInput, InfoInputWrapper } from 'src/components/Inputs/Input.styled';
 
 export const EyeIconButton = styled.button`
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
+  ${({ theme: { indents } }) => css`
+    position: absolute;
+    top: ${indents.i16};
+    right: ${indents.i10};
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+  `};
 `;
 
 interface PassProps {
