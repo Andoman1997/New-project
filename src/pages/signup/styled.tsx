@@ -70,11 +70,6 @@ export const AgreementWrapper = styled.div`
     justify-content: space-between;
   `};
 `;
-export const CheckboxInput = styled.input`
-  ${({ theme: { colors } }) => css`
-    accent-color: ${colors.whiteF4};
-  `};
-`;
 
 export const TermsLink = styled(Link)`
   font-weight: bold;
@@ -89,13 +84,6 @@ export const Terms = styled.span`
     border-bottom: 1px solid ${colors.black};
   `};
 `;
-export const Text = styled.span`
-  ${({ theme: { indents, typography } }) => css`
-    margin-left: ${indents.i8};
-    font-size: ${typography.text.t16};
-    line-height: 100%;
-  `};
-`;
 
 export const SignInText = styled.span`
   ${({ theme: { typography, colors } }) => css`
@@ -103,6 +91,5 @@ export const SignInText = styled.span`
     color: ${colors.royalBlue};
     font-size: ${typography.text.t16};
     font-weight: 550;
-    line-height: 100%;
   `};
 `;

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   AgreementWrapper,
   AvatarUploadWrapper,
-  CheckboxInput,
   CheckboxWrapper,
   Container,
   FormContainer,
@@ -12,7 +11,6 @@ import {
   SignInText,
   Terms,
   TermsLink,
-  Text,
   Title,
 } from 'src/pages/signup/styled';
 import AvatarUpload from 'src/components/AvatarUpload/AvatarUpload';
@@ -23,6 +21,7 @@ import NameInput from 'src/components/Inputs/NameInput';
 import TextInput from 'src/components/Inputs/TextInput';
 import EmailInput from 'src/components/Inputs/EmailInput';
 import Link from 'next/link';
+import Checkbox from 'src/components/Inputs/CheckboxInput';
 
 const IndustryList: Option[] = [
   {
@@ -83,8 +82,7 @@ const Signup: React.FC = () => {
         </SelectBox>
         <AgreementWrapper>
           <CheckboxWrapper>
-            <CheckboxInput type="checkbox" />
-            <Text>I agree with</Text>
+            <Checkbox />
             <TermsLink href="/terms" passHref>
               <Terms>Terms and Conditions</Terms>
             </TermsLink>
