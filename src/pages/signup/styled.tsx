@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { InputWrapper } from 'src/components/Inputs/Input.styled';
 import Link from 'next/link';
+import { SignUpButton } from 'src/containers/Navbar/Navbar.styled';
 
 export const Container = styled.div`
   ${({ theme: { colors, radius } }) => css`
@@ -66,7 +67,7 @@ export const CheckboxWrapper = styled.div`
 export const AgreementWrapper = styled.div`
   ${({ theme: { indents } }) => css`
     display: flex;
-    margin-top: ${indents.i24};
+    margin-top: ${indents.i32};
     justify-content: space-between;
   `};
 `;
@@ -92,4 +93,16 @@ export const SignInText = styled.span`
     font-size: ${typography.text.t16};
     font-weight: 550;
   `};
+`;
+
+export const SubmitButton = styled(SignUpButton)`
+  margin-top: 32px;
+  width: 100%;
+  gap: 8px;
+`;
+
+export const ArrowRightIcon = styled.div`
+  background-image: url('/static/icons/ArrowRight.svg');
+  height: 16px;
+  width: 16px;
 `;

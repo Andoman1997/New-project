@@ -10,6 +10,7 @@ export const CheckboxInput = styled.input`
       cursor: pointer;
       padding-left: ${indents.i24};
       font-size: ${typography.text.t16};
+      color: ${colors.greyA3};
     }
 
     & + label::before {

@@ -5,7 +5,7 @@ const Checkbox: React.FC = () => {
   return (
     <>
       <CheckboxInput type="checkbox" id="agreement" />
-      <label htmlFor="agreement">I agree with</label>
+      <label htmlFor="agreement">I agree to</label>
     </>
   );
 };

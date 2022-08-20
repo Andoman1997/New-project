@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   AgreementWrapper,
+  ArrowRightIcon,
   AvatarUploadWrapper,
   CheckboxWrapper,
   Container,
@@ -9,6 +10,7 @@ import {
   NameInputGroup,
   SelectBox,
   SignInText,
+  SubmitButton,
   Terms,
   TermsLink,
   Title,
@@ -91,6 +93,9 @@ const Signup: React.FC = () => {
             <SignInText>Sign In</SignInText>
           </Link>
         </AgreementWrapper>
+        <SubmitButton>
+          Sign Up <ArrowRightIcon />
+        </SubmitButton>
       </FormContainer>
     </Container>
   );
