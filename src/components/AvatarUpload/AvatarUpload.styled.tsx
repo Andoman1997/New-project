@@ -3,8 +3,6 @@ import { Upload } from 'antd';
 import 'antd/lib/upload/style/index.css';
 
 export const UploadBox = styled(Upload)`
-  margin-bottom: 12px;
-
   ${({ theme: { colors } }) => css`
     .ant-upload {
       display: flex;
