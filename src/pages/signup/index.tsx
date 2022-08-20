@@ -21,7 +21,7 @@ import NameInput from 'src/components/Inputs/NameInput';
 import TextInput from 'src/components/Inputs/TextInput';
 import EmailInput from 'src/components/Inputs/EmailInput';
 import Link from 'next/link';
-import Checkbox from 'src/components/Inputs/CheckboxInput';
+import Checkbox from 'src/components/Inputs/Checkbox/CheckboxInput';
 
 const IndustryList: Option[] = [
   {
