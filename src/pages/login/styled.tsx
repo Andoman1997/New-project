@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   AgreementWrapper,
   NameInputContainer,
@@ -10,7 +10,7 @@ import {
 } from 'src/pages/signup/styled';
 
 export const SignInContainer = styled(SignUpContainer)`
-  width: 450px;
+  max-width: 450px;
   height: 600px;
   margin: 240px auto;
 `;
@@ -27,7 +27,9 @@ export const InputContainer = styled(NameInputContainer)`
 export const InputGroup = styled(NameInputGroup)``;
 
 export const SignInSubmitButton = styled(SubmitButton)`
-  margin-top: 12px;
+  ${({ theme: { indents } }) => css`
+    margin-top: ${indents.i12};
+  `};
 `;
 
 export const SignInFooter = styled(AgreementWrapper)`
@@ -35,11 +37,12 @@ export const SignInFooter = styled(AgreementWrapper)`
 `;
 
 export const PassRecoverText = styled.span`
-  font-weight: 550;
-  font-size: 16px;
-  line-height: 100%;
-  color: #737373;
-  cursor: pointer;
+  ${({ theme: { typography, colors } }) => css`
+    font-weight: 550;
+    font-size: ${typography.text.t16};
+    line-height: 100%;
+    color: ${colors.grey73};
+    cursor: pointer;
+  `};
 `;
-
 export const SignUpText = styled(SignInText)``;
