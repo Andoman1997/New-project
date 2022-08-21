@@ -5,14 +5,16 @@ import { SignUpButton } from 'src/containers/Navbar/Navbar.styled';
 
 export const SignUpContainer = styled.div`
   ${({ theme: { colors, radius } }) => css`
-    display: flex;
-    margin: 145px auto;
+    margin: 32px auto;
     max-width: 590px;
-    height: 790px;
     background-color: ${colors.white};
     border: 1px solid ${colors.whiteF4};
     border-radius: ${radius.small};
     flex-direction: column;
+    display: flex;
+    min-height: calc(100vh - 100px);
+    height: 100%;
+    overflow: auto;
   `};
 `;
 export const AvatarUploadWrapper = styled.div`
@@ -23,7 +25,7 @@ export const AvatarUploadWrapper = styled.div`
 export const Title = styled.p`
   ${({ theme: { colors, typography, indents } }) => css`
     text-align: center;
-    height: 45px;
+    height: 100%;
     width: 100%;
     line-height: 45px;
     font-weight: 800;
@@ -36,8 +38,9 @@ export const Title = styled.p`
 export const SignUpFormContainer = styled.form`
   ${({ theme: { indents } }) => css`
     margin: 0 ${indents.i32};
-    height: 520px;
+    height: 100%;
     max-width: 530px;
+    justify-content: center;
   `};
 `;
 
@@ -45,7 +48,7 @@ export const NameInputContainer = styled.div`
   ${({ theme: { indents } }) => css`
     display: flex;
     flex-direction: row;
-    height: 124px;
+    height: 100%;
     margin-bottom: ${indents.i12};
   `};
 `;
@@ -67,7 +70,7 @@ export const CheckboxWrapper = styled.div`
 export const AgreementWrapper = styled.div`
   ${({ theme: { indents } }) => css`
     display: flex;
-    margin-top: ${indents.i32};
+    margin: ${indents.i32} auto;
     justify-content: space-between;
   `};
 `;

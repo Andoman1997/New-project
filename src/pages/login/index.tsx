@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Divider,
   InputContainer,
   InputGroup,
   PassRecoverText,
@@ -13,12 +14,15 @@ import { ArrowRightIcon, Title } from 'src/pages/signup/styled';
 import EmailInput from 'src/components/Inputs/EmailInput';
 import PasswordInput from 'src/components/Inputs/PasswordInput';
 import Link from 'next/link';
+import OuterSignButton from 'src/components/Button/OuterSignButton';
 
 function Login() {
   return (
     <SignInContainer>
       <Title>Sign In</Title>
       <SignInFormContainer>
+        <OuterSignButton />
+        <Divider />
         <InputContainer>
           <InputGroup>
             <EmailInput label="Email address" />

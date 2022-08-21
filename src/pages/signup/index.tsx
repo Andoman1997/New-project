@@ -24,6 +24,8 @@ import TextInput from 'src/components/Inputs/TextInput';
 import EmailInput from 'src/components/Inputs/EmailInput';
 import Link from 'next/link';
 import Checkbox from 'src/components/Inputs/Checkbox/CheckboxInput';
+import OuterSignButton from 'src/components/Button/OuterSignButton';
+import { Divider } from 'src/pages/login/styled';
 
 const IndustryList: Option[] = [
   {
@@ -55,6 +57,8 @@ const Signup: React.FC = () => {
     <SignUpContainer>
       <Title>Sign Up</Title>
       <SignUpFormContainer>
+        <OuterSignButton />
+        <Divider />
         <NameInputContainer>
           <AvatarUploadWrapper>
             <AvatarUpload />

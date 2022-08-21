@@ -11,13 +11,11 @@ import {
 
 export const SignInContainer = styled(SignUpContainer)`
   max-width: 450px;
-  height: 600px;
+  min-height: calc(100vh - 500px);
   margin: 240px auto;
 `;
 
-export const SignInFormContainer = styled(SignUpFormContainer)`
-  height: 185px;
-`;
+export const SignInFormContainer = styled(SignUpFormContainer)``;
 
 export const InputContainer = styled(NameInputContainer)`
   height: 184px;
@@ -46,3 +44,9 @@ export const PassRecoverText = styled.span`
   `};
 `;
 export const SignUpText = styled(SignInText)``;
+
+export const Divider = styled.div`
+  background: #f4f4f4;
+  height: 1px;
+  margin: 32px auto;
+`;
