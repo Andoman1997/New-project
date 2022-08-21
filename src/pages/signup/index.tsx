@@ -4,12 +4,12 @@ import {
   ArrowRightIcon,
   AvatarUploadWrapper,
   CheckboxWrapper,
-  FormContainer,
   NameInputContainer,
   NameInputGroup,
   SelectBox,
   SignInText,
   SignUpContainer,
+  SignUpFormContainer,
   SubmitButton,
   Terms,
   TermsLink,
@@ -54,7 +54,7 @@ const Signup: React.FC = () => {
   return (
     <SignUpContainer>
       <Title>Sign Up</Title>
-      <FormContainer>
+      <SignUpFormContainer>
         <NameInputContainer>
           <AvatarUploadWrapper>
             <AvatarUpload />
@@ -96,7 +96,7 @@ const Signup: React.FC = () => {
         <SubmitButton>
           Sign Up <ArrowRightIcon />
         </SubmitButton>
-      </FormContainer>
+      </SignUpFormContainer>
     </SignUpContainer>
   );
 };
