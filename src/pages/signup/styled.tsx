@@ -33,7 +33,7 @@ export const Title = styled.p`
   `};
 `;
 
-export const FormContainer = styled.form`
+export const SignUpFormContainer = styled.form`
   ${({ theme: { indents } }) => css`
     margin: 0 ${indents.i32};
     height: 520px;
