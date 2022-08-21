@@ -3,7 +3,7 @@ import { InputWrapper } from 'src/components/Inputs/Input.styled';
 import Link from 'next/link';
 import { SignUpButton } from 'src/containers/Navbar/Navbar.styled';
 
-export const Container = styled.div`
+export const SignUpContainer = styled.div`
   ${({ theme: { colors, radius } }) => css`
     display: flex;
     margin: 145px auto;

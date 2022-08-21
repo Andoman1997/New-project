@@ -4,12 +4,12 @@ import {
   ArrowRightIcon,
   AvatarUploadWrapper,
   CheckboxWrapper,
-  Container,
   FormContainer,
   NameInputContainer,
   NameInputGroup,
   SelectBox,
   SignInText,
+  SignUpContainer,
   SubmitButton,
   Terms,
   TermsLink,
@@ -52,7 +52,7 @@ const Signup: React.FC = () => {
   const [selectedOccupation, setSelectedOccupation] = useState<Option | null>(null);
 
   return (
-    <Container>
+    <SignUpContainer>
       <Title>Sign Up</Title>
       <FormContainer>
         <NameInputContainer>
@@ -97,7 +97,7 @@ const Signup: React.FC = () => {
           Sign Up <ArrowRightIcon />
         </SubmitButton>
       </FormContainer>
-    </Container>
+    </SignUpContainer>
   );
 };
 
