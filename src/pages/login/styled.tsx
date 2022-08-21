@@ -18,7 +18,7 @@ export const SignInContainer = styled(SignUpContainer)`
 export const SignInFormContainer = styled(SignUpFormContainer)``;
 
 export const InputContainer = styled(NameInputContainer)`
-  height: 184px;
+  height: 180px;
   flex-direction: column;
 `;
 
@@ -46,7 +46,9 @@ export const PassRecoverText = styled.span`
 export const SignUpText = styled(SignInText)``;
 
 export const Divider = styled.div`
-  background: #f4f4f4;
-  height: 1px;
-  margin: 32px auto;
+  ${({ theme: { indents, colors } }) => css`
+    background: ${colors.whiteF4};
+    height: 1px;
+    margin: ${indents.i32} auto;
+  `};
 `;

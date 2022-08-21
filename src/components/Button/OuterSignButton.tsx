@@ -1,30 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { SubmitButton } from 'src/pages/signup/styled';
 
 const OuterSignInButtonWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    flex-direction: column;
+    gap: ${indents.i8};
+  `};
 `;
-
 const OuterSignInButton = styled(SubmitButton)`
-  background-color: #ffffff;
-  border: 1px solid #f4f4f4;
-  border-radius: 5px;
-  height: 50px;
-  margin: auto 0;
+  ${({ theme: { radius, colors } }) => css`
+    background-color: ${colors.white};
+    border: 1px solid ${colors.whiteF4};
+    border-radius: ${radius.small};
+    height: 50px;
+    margin: auto 0;
 
-  :hover {
-    background-color: #f4f4f4;
-  }
+    :hover {
+      background-color: ${colors.whiteF4};
+    }
+  `};
 `;
 
 const InnerBtnWrapper = styled.div`
-  display: flex;
-  column-gap: 9px;
-  justify-content: center;
-  align-items: center;
+  ${({ theme: { indents } }) => css`
+    display: flex;
+    column-gap: ${indents.i8};
+    justify-content: center;
+    align-items: center;
+  `};
 `;
 
 const GoogleIcon = styled.div`
@@ -46,11 +51,12 @@ const StudentIcon = styled.div`
 `;
 
 export const OuterSignButtonText = styled.span`
-  font-size: 16px;
-  line-height: 100%;
-  color: #171717;
+  ${({ theme: { typography, colors } }) => css`
+    font-size: ${typography.text.t16};
+    line-height: 100%;
+    color: ${colors.grey17};
+  `};
 `;
-
 const OuterSignButton = () => {
   return (
     <OuterSignInButtonWrapper>
