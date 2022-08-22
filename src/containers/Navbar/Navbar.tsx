@@ -30,8 +30,8 @@ const Navbar = () => {
 
             <MiddleContainer>
               <NavLinkContainer>
-                {NavLinks.map(({ name, to }) => (
-                  <Link href={to}>
+                {NavLinks.map(({ id, name, to }) => (
+                  <Link href={to} key={id}>
                     <NavLink>{name}</NavLink>
                   </Link>
                 ))}

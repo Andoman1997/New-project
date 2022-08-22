@@ -7,11 +7,10 @@ export const NavbarContainer = styled.nav`
     width: 100%;
     height: 96px;
     background-color: ${colors.white};
-    cursor: pointer;
   `};
 `;
 
-export const StyledButton = styled.a`
+export const StyledButton = styled.button`
   ${({ theme: { typography, radius } }) => css`
     display: flex;
     justify-content: center;
@@ -22,6 +21,8 @@ export const StyledButton = styled.a`
     font-weight: 700;
     font-size: ${typography.text.t16};
     line-height: ${typography.text.t14};
+    border: none;
+    cursor: pointer;
   `};
 `;
 

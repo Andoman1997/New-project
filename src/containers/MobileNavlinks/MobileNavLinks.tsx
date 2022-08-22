@@ -12,8 +12,8 @@ const MobileNavLinks = () => {
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
-          {NavLinks.map(({ name, to }) => (
-            <Link href={to}>
+          {NavLinks.map(({ id, name, to }) => (
+            <Link href={to} key={id}>
               <NavLink>{name}</NavLink>
             </Link>
           ))}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const NavLinks = [
-  { name: 'How It Works', to: 'how-it-works' },
-  { name: 'About', to: '/about' },
-  { name: 'Support', to: '/support' },
+  { id: 1, name: 'How It Works', to: 'how-it-works' },
+  { id: 2, name: 'About', to: '/about' },
+  { id: 3, name: 'Support', to: '/support' },
 ];
