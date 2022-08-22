@@ -50,7 +50,7 @@ const StudentIcon = styled.div`
   width: 16px;
 `;
 
-export const OuterSignButtonText = styled.span`
+export const OuterSignButtonText = styled.p`
   ${({ theme: { typography, colors } }) => css`
     font-size: ${typography.text.t16};
     line-height: 100%;
