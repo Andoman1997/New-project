@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Logo: React.FC = () => {
   return (
     <Link href="/home" passHref>
-      <LogoIcon />
+      <LogoIcon>Logo</LogoIcon>
     </Link>
   );
 };

@@ -12,7 +12,7 @@ export const SignUpContainer = styled.div`
     border-radius: ${radius.small};
     flex-direction: column;
     display: flex;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 200px);
     height: 100%;
     overflow: auto;
   `};

@@ -18,6 +18,7 @@ export const LinksWrapper = styled.ul`
     position: fixed;
     top: 65px;
     left: 0;
+    z-index: 10000;
   `};
 `;
 

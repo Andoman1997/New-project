@@ -5,7 +5,7 @@ import { SubmitButton } from 'src/pages/signup/styled';
 const OuterSignInButtonWrapper = styled.div`
   ${({ theme: { indents } }) => css`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: ${indents.i8};
   `};
 `;
@@ -63,19 +63,16 @@ const OuterSignButton = () => {
       <OuterSignInButton>
         <InnerBtnWrapper>
           <GoogleIcon />
-          <OuterSignButtonText>Continue with Google</OuterSignButtonText>
         </InnerBtnWrapper>
       </OuterSignInButton>
       <OuterSignInButton>
         <InnerBtnWrapper>
           <AppleIcon />
-          <OuterSignButtonText>Continue with Apple ID</OuterSignButtonText>
         </InnerBtnWrapper>
       </OuterSignInButton>
       <OuterSignInButton>
         <InnerBtnWrapper>
           <StudentIcon />
-          <OuterSignButtonText>Continue with Student Portal</OuterSignButtonText>
         </InnerBtnWrapper>
       </OuterSignInButton>
     </OuterSignInButtonWrapper>

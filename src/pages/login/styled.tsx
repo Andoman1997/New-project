@@ -11,7 +11,7 @@ import {
 
 export const SignInContainer = styled(SignUpContainer)`
   max-width: 450px;
-  min-height: calc(100vh - 500px);
+  min-height: calc(100vh - 600px);
   margin: 240px auto;
 `;
 
