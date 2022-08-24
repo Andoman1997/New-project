@@ -4,7 +4,7 @@ const PageHead = () => {
   return (
     <div>
       <Head>
-        <title>Provineer</title>
+        <title>Andos new project</title>
         <meta name="description" content="Meta description for the  page" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
